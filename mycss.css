@@ -1,1 +1,85 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: #f3f6fb;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: min(100%, 900px);
+    padding: 2.5rem;
+    border: 1px solid #e5eaf2;
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0 1.25rem 3rem rgb(31 41 55 / 8%);
+}
+
+.profile__image {
+    flex: 0 0 220px;
+    width: 220px;
+    height: 220px;
+    border: 6px solid #e8edf5;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile__content {
+    max-width: 560px;
+}
+
+.profile__eyebrow {
+    margin: 0 0 0.5rem;
+    color: #5267b5;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.profile h1 {
+    margin: 0 0 1rem;
+    color: #172033;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.profile__biography {
+    margin: 0;
+    color: #596579;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .profile__image {
+        flex-basis: 180px;
+        width: 180px;
+        height: 180px;
+    }
+}
+ #whatsapp{
+    color: rgb(21, 255, 21);
+    font-size: 50px;
+ }
